@@ -12,9 +12,9 @@ var Game = function () {
 
 		manager_scene = new ManagerScene();
 		manager_scene.init(stage);
-		manager_scene.addScene("game", new SceneGame());
+		manager_scene.addScene("login", new SceneLogIn());
 
-		manager_scene.start("game");
+		manager_scene.start("login");
 
 		createjs.Ticker.setFPS(30);
 		createjs.Ticker.addEventListener("tick", render);
